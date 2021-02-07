@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="homePage.css">
+    <title>muscleApp</title>
+</head>
+  
+<body onload="showPage()">
+
+    <div class="loader-wrapper" id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <header id="header">
+        <div id="headerDiv">
+            <span id="headerLabel"><span>muscle</span>App</span>
+            <h4>אפליקציה שמלווה אותך בהגשמת החלומות.</h4>
+        </div>
+    </header>
+    <main id="main">
+        <div id="divForm">
+            <select id="plane" onchange="Calculator()">
+                <option selected disabled>בחר תוכנית חישוב :</option>
+                <option value="BMI">BMI</option>
+                <option value="bodyFat">אחוז שומן</option>
+                <option value="protain">כמות חלבון ליום</option>
+                <option value="water">כמות מים כדי לרזות</option>
+                <option value="calories">כמות קלוריות יומית להרזיה</option>
+                <option value="history">היסטוריית חישובים</option>
+                <option value="contact">צור קשר</option>
+                <option value="homePage">לדף הבית</option>
+
+            </select>
+        </div>
+        <div id="calculator">
+            <h3>בבחירה מתוך התפריט ניתן לחשב:</h3>
+            <ul>
+                <label>מדדים מועילים בתהליך פיתוח שריר</label>
+                <li><span>כמות חלבון יומית</span>- כמה עלי לצרוך כדי לפתח שריר</li>
+                <li id="lastLi"><span>אחוז שומן</span>- מחושב לפי נוסחת חיל הים האמריקאי</li>
+                <label>מדדים מועילים בתהליך הרזיה</label>
+                <li><span>BMI</span>- מדד מסת הגוף שלך, מעיד על תקינות המשקל שלך</li>
+                <li><span>כמות שתיית מים כדי לרזות</span>- כמה עלי לשתות כדי לסייע לגוף לרזות</li>
+                <li><span>כמות קלוריות יומית להרזיה</span>- כמה עלי לאכול כדי לרזות</li>
+            </ul>
+        </div>
+    </main>
+    <!-- <footer id="footer">
+        <div class="footerSection">
+            <h2>גרסת BETA, נשמח לקבל הערות</h2>
+            <form action="https://muscle-app-heroku.herokuapp.com/" method="POST" target="confirm">
+                <div id="footerGander">
+                    <span class="FooterGenderSpan">
+                        <input required type="radio" name="gender" value="זכר" class="FooterGenderRadio" id="male">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <span>זכר</span>
+                    </span>
+                    <span class="FooterGenderSpan">
+                        <input required type="radio" name="gender" value="נקבה" class="FooterGenderRadio" id="female">
+                        <i class="fa fa-female" aria-hidden="true"></i>
+                        <span>נקבה</span>
+                    </span>
+                </div>
+                <textarea id="FormInfo" name="message" required class="contactInputs" placeholder="כתוב לנו"></textarea>
+                <iframe name="confirm" id="confirm"></iframe>
+                <button class="btn contactInputs" id="senderBtn">
+                    שלח
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </footer> -->
+    <script src="homePage.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>

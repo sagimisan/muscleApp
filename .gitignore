@@ -1,0 +1,10 @@
+/.idea
+/hooks
+/node_modules
+/platforms
+/plugins
+/res
+.icon.png
+.config.xml
+.package-lock.json
+.README.md
